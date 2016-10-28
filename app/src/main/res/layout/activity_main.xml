@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_picture_main"
+        android:columnCount="5"
+        android:rowCount="3"
+        android:layout_centerInParent="true">
+        <!-- android:paddingLeft="@dimen/distance_5dp"
+       android:paddingRight="@dimen/distance_5dp"
+       android:paddingTop="@dimen/distance_5dp"
+       android:paddingBottom="@dimen/distance_5dp"-->
+
+    </GridLayout>
+    <ImageView
+        android:layout_width="@dimen/width_150"
+        android:layout_height="@dimen/width_150"
+        android:layout_below="@+id/gl_picture_main"
+        android:paddingTop="@dimen/distance_20dp"
+        android:src="@mipmap/half"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
